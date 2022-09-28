@@ -5,14 +5,15 @@ import java.util.Scanner;
 
 public class Program {
 	
-	public static final double PI = 3.14159; // Padrão de nome para constante é em letra maiscula
-
+	public static final double PI = 3.14159; // Padrão de nome para constante é em letra maiúscula
+	
+	// Inicio do método Main
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Enter radius: ");
+		System.out.print("Enter radius: ");
 		double radius = sc.nextDouble();
 		
 		double c = circumference(radius);
@@ -25,8 +26,9 @@ public class Program {
 		
 		sc.close();
 
-	}
+	} // Fim do método main
 	
+	// métodos para calcular volume e circunferência
 	public static double circumference(double radius) {
 		return 2.0 * PI * radius;
 	}
